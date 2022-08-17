@@ -51,7 +51,7 @@ if settings?.isEmpty == true { settings = nil }
 let package = Package(
   name: "swift-collections",
   products: [
-    .library(name: "Collections", targets: ["Collections"]),
+    .library(name: "Collections", type: .dynamic, targets: ["Collections"]),
     .library(name: "DequeModule", targets: ["DequeModule"]),
     .library(name: "OrderedCollections", targets: ["OrderedCollections"]),
   ],
